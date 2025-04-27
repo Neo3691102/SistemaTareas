@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nestorc.tareas.controlador.IndexControlador">
+   <children>
+      <Label layoutX="195.0" layoutY="51.0" text="Sistema de Tareas" textFill="#5160e4">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <TableView fx:id="tareaTabla" layoutX="112.0" layoutY="87.0" prefHeight="200.0" prefWidth="320.0">
+        <columns>
+          <TableColumn fx:id="idTareaColumna" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="nombreTareaColumna" prefWidth="75.0" text="Tarea" />
+            <TableColumn fx:id="responsableColumna" prefWidth="75.0" text="Responsable" />
+            <TableColumn fx:id="estatusColumna" prefWidth="75.0" text="Estatus" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
