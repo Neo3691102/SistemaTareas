@@ -6,17 +6,58 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nestorc.tareas.controlador.IndexControlador">
    <children>
-      <Label layoutX="195.0" layoutY="51.0" text="Sistema de Tareas" textFill="#5160e4">
+      <Label layoutX="195.0" layoutY="33.0" text="Sistema de Tareas" textFill="#5160e4">
          <font>
             <Font name="System Bold" size="25.0" />
          </font></Label>
-      <TableView fx:id="tareaTabla" layoutX="112.0" layoutY="87.0" prefHeight="200.0" prefWidth="320.0">
+      <TableView fx:id="tareaTabla" layoutX="221.0" layoutY="100.0" prefHeight="200.0" prefWidth="370.0">
         <columns>
-          <TableColumn fx:id="idTareaColumna" prefWidth="75.0" text="ID" />
-          <TableColumn fx:id="nombreTareaColumna" prefWidth="75.0" text="Tarea" />
-            <TableColumn fx:id="responsableColumna" prefWidth="75.0" text="Responsable" />
-            <TableColumn fx:id="estatusColumna" prefWidth="75.0" text="Estatus" />
+          <TableColumn fx:id="idTareaColumna" prefWidth="33.0" text="ID" />
+          <TableColumn fx:id="nombreTareaColumna" prefWidth="117.0" text="Tarea" />
+            <TableColumn fx:id="responsableColumna" prefWidth="111.0" text="Responsable" />
+            <TableColumn fx:id="estatusColumna" prefWidth="96.0" text="Estatus" />
         </columns>
       </TableView>
+      <AnchorPane layoutX="26.0" layoutY="99.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="29.0" layoutY="10.0" text="Tarea" textFill="#457b9d">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="72.0" text="Responsable" textFill="#457b9d">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="125.0" text="Estatus" textFill="#457b9d">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font></Label>
+            <TextField fx:id="nombreTareaTexto" layoutX="26.0" layoutY="38.0" />
+            <TextField fx:id="responsableTexto" layoutX="29.0" layoutY="100.0" />
+            <TextField fx:id="estatusTexto" layoutX="26.0" layoutY="157.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="26.0" layoutY="312.0" prefHeight="86.0" prefWidth="529.0">
+         <children>
+            <Button layoutX="14.0" layoutY="26.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="99.0" style="-fx-background-color: #1d3557;" text="Agregar" textFill="#f1faee">
+               <font>
+                  <Font size="19.0" />
+               </font></Button>
+            <Button layoutX="123.0" layoutY="26.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="112.0" style="-fx-background-color: #1d3557;" text="Modificar" textFill="#f1faee">
+               <font>
+                  <Font size="19.0" />
+               </font></Button>
+            <Button layoutX="247.0" layoutY="26.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="99.0" style="-fx-background-color: #e63946;" text="Eliminar" textFill="#f1faee">
+               <font>
+                  <Font size="19.0" />
+               </font></Button>
+            <Button layoutX="366.0" layoutY="25.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="149.0" style="-fx-background-color: #ffd60a;" text="Limpiar Forma" textFill="#f1faee">
+               <font>
+                  <Font size="19.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>
