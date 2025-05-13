@@ -41,19 +41,19 @@
       </AnchorPane>
       <AnchorPane layoutX="26.0" layoutY="312.0" prefHeight="86.0" prefWidth="529.0">
          <children>
-            <Button layoutX="14.0" layoutY="26.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="99.0" style="-fx-background-color: #1d3557;" text="Agregar" textFill="#f1faee">
+            <Button fx:id="agregarBoton" layoutX="14.0" layoutY="26.0" mnemonicParsing="false" onAction="#agregarTarea" prefHeight="40.0" prefWidth="99.0" style="-fx-background-color: #1d3557;" text="Agregar" textFill="#f1faee">
                <font>
                   <Font size="19.0" />
                </font></Button>
-            <Button layoutX="123.0" layoutY="26.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="112.0" style="-fx-background-color: #1d3557;" text="Modificar" textFill="#f1faee">
+            <Button fx:id="modificarBoton" layoutX="123.0" layoutY="26.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="112.0" style="-fx-background-color: #1d3557;" text="Modificar" textFill="#f1faee">
                <font>
                   <Font size="19.0" />
                </font></Button>
-            <Button layoutX="247.0" layoutY="26.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="99.0" style="-fx-background-color: #e63946;" text="Eliminar" textFill="#f1faee">
+            <Button fx:id="eliminarBoton" layoutX="247.0" layoutY="26.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="99.0" style="-fx-background-color: #e63946;" text="Eliminar" textFill="#f1faee">
                <font>
                   <Font size="19.0" />
                </font></Button>
-            <Button layoutX="366.0" layoutY="25.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="149.0" style="-fx-background-color: #ffd60a;" text="Limpiar Forma" textFill="#f1faee">
+            <Button fx:id="limpiarBoton" layoutX="366.0" layoutY="25.0" mnemonicParsing="false" onAction="#agregarTarea" prefHeight="40.0" prefWidth="149.0" style="-fx-background-color: #ffd60a;" text="Limpiar Forma" textFill="#f1faee">
                <font>
                   <Font size="19.0" />
                </font></Button>
